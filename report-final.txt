@@ -1,0 +1,33 @@
+Features Covered:
+User Registration – Registers users and generates RSA key pairs.
+
+Public Key Storage – Stores public/private keys for users.
+
+Session Key Generation – Generates a random Caesar cipher key.
+
+Secure Key Exchange – Encrypts Caesar key with RSA and sends it.
+
+Client Simulation – Alice encrypts a message with Caesar; Bob decrypts it.
+
+~Report Summary~
+Project Title: Key Distribution Center for Caesar with RSA
+
+Objective:
+To implement a simple key distribution center (KDC) that securely allows users to exchange a Caesar cipher key using RSA encryption.
+
+Steps and Explanation:
+
+-RSA Key Generation:
+Double-digit primes are selected to create public/private RSA key pairs using modular arithmetic.
+
+-User Registration:
+Each user registers and receives an RSA key pair. These keys are stored in a dictionary.
+
+-Key Distribution:
+When Alice wants to send a session key to Bob, the KDC encrypts a random Caesar key with Bob’s public RSA key.
+
+-Secure Caesar Key Exchange:
+Bob uses his RSA private key to decrypt the session key.
+
+-Communication Using Caesar Cipher:
+Alice encrypts a message using Caesar with the session key, and Bob decrypts it.
